@@ -18,7 +18,7 @@
 		tbody {
 			tr {
 				border: solid _size(border-width) _palette(border);
-				border-left: 0;
+				border-right: 0;
 				border-right: 0;
 
 				&:nth-child(2n + 1) {
@@ -36,7 +36,7 @@
 			font-size: 0.9em;
 			font-weight: _font(weight-bold);
 			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
+			text-align: right;
 		}
 
 		thead {
@@ -54,11 +54,11 @@
 				tr {
 					td {
 						border: solid _size(border-width) _palette(border);
-						border-left-width: 0;
+						border-right-width: 0;
 						border-top-width: 0;
 
 						&:first-child {
-							border-left-width: _size(border-width);
+							border-right-width: _size(border-width);
 						}
 					}
 

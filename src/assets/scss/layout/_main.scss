@@ -63,7 +63,7 @@
 					display: block;
 					position: absolute;
 					top: 0.75rem;
-					left: 0.75rem;
+					right: 0.75rem;
 					width: 2.5rem;
 					height: 2.5rem;
 					border-radius: 100%;
@@ -94,7 +94,7 @@
 				.close {
 					&:before {
 						top: 0.875rem;
-						left: 0.875rem;
+						right: 0.875rem;
 						width: 2.25rem;
 						height: 2.25rem;
 						background-size: 14px 14px;
