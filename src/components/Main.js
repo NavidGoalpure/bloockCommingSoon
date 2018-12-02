@@ -46,7 +46,7 @@ class Main extends React.Component {
             کتاب‌هاشون رو اجاره بدن و از این راه کسب درآمد کنن. از طرف دیگه
             کسانی که کتاب اجاره می‌کنن هم میتونن کتابی که دوس دارن بخونن رو با
             قیمتی بسیار کمتر و با حدود «۸۰ درصد» صرفه جویی مطالعه کنن.
-            <a href="#work">awesome work</a>.
+            <a href="#whyBlockchain">چرا بلاکچین؟</a>.
           </p>
           <p>
             این کار با بهینه تر کردن نحوه مصرف ما هزینه کتاب‌خوانی رو برای انسان
@@ -62,31 +62,47 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
+          id="whyBlockchain"
+          className={`${
+            this.props.article === 'whyBlockchain' ? 'active' : ''
+          } ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">چرا بلاکچین</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+            مفهوم «اقتصاد مشارکتی» و کسب و کارهای مربوط به اون پیش از «بلاکچین»
+            وجود داشتن، اما با به وجود آمدن زیرساخت‌های مربوط به «بلاکچین» و
+            «قرارداد‌های هوشمند» می‌تونن کاربردهای بسیار جذاب‌تری داشته باشن.
           </p>
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+            همانطور که در مقاله «فلان» توضیح دادم، با فراگیر شدن اینترنت
+            «پلتفرم‌های تجاری» فرصت پیدا کردن که با متصل کردن افراد و خدمات فرصت
+            های جدیدی برای خلق پول و ارزش به وجود بیارن.
           </p>
+          <p>
+            هرچند این شرکت ها با متصل کردن دوستان و آشنایان به ،‌ تولیدکننده‌ها
+            و مصرف کننده‌ها، راننده ها و مسافرها و … خدمات جدید و مفیدی رو توی
+            جامعه به وجود آوردن، اما مشکل واقعی وقتی مشخص شد که منافعی که از این
+            راه به دست ‌می‌اومد به صورت ناعادلانه تقسیم شد. این کمپانی ها با
+            قرار گرفتن در گلوگاه های حیاتی این تبادلات سود و قدرت بیشتری رو نسبت
+            به کسایی جامعه به دست می‌آوردن
+          </p>
+          <p>
+            با به رشد و گسترش بلاکچین و کسب و کارهای مبتنی دنیا می‌تونه یک قدم
+            دیگه به سمت عادلانه شدن برداره. در مرحله قبلی و با رشد اینترنت
+            «پلتفرم‌ها» به افراد فرصت دادن بتونن دارایی‌های کوچیکشون رو به هم
+            پیوند بدن و در قالب یک محصول بزرگ اما متنوع با «تولید انبوه» مقابله
+            کنن.
+          </p>
+          <p />
+          حالا با اومدن بلاکچین برای اولین بار این فرصت به وجود اومده که منافع
+          حاصل از این جنبش جدید به صاحبان اصلیش برسه. برای اطلاع از جزییات بیشتر
+          و اینکه چطور بلاکچین می‌تونه در حل این مشکل «عصای جادویی» ما باشه
+          می‌تونید به «فلان» مقاله مراجعه کنین
+          <p />
           {close}
         </article>
 
@@ -185,22 +201,28 @@ class Main extends React.Component {
           </form>
           <ul className="icons">
             <li>
-              <a href="#" className="icon fa-twitter">
+              <a
+                href="https://twitter.com/NavidGoalpure"
+                className="icon fa-twitter"
+              >
                 <span className="label">Twitter</span>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#" className="icon fa-facebook">
                 <span className="label">Facebook</span>
               </a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a href="#" className="icon fa-instagram">
                 <span className="label">Instagram</span>
               </a>
-            </li>
+            </li> */}
             <li>
-              <a href="#" className="icon fa-github">
+              <a
+                href="https://github.com/NavidGoalpure"
+                className="icon fa-github"
+              >
                 <span className="label">GitHub</span>
               </a>
             </li>
