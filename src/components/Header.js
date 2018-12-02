@@ -45,7 +45,7 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle('socialBusines')
             }}
           >
             کسب و کار اجتماعی
