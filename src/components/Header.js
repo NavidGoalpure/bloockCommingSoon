@@ -15,7 +15,7 @@ const Header = props => (
           با این کار هم یک صرفه جویی ۸۰ درصدی تو خرید کتاب اتفاق می‌افته،‌هم
           درختای کمتری قطع میشه برای اطلاعات بیشتر درباره بلاکچین و تاثیر اون تو
           جامعه به وبلاگ MrNawid مراجعه کنین.{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          <a href="#">Creative Commons</a> license.
         </p>
       </div>
     </div>
