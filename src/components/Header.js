@@ -28,7 +28,7 @@ const Header = props => (
               props.onOpenArticle('goal')
             }}
           >
-            پروژه
+            هدف پروژه
           </a>
         </li>
         <li>
@@ -48,7 +48,7 @@ const Header = props => (
               props.onOpenArticle('about')
             }}
           >
-            درباره ما
+            کسب و کار اجتماعی
           </a>
         </li>
         <li>
