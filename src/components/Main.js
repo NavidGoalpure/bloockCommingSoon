@@ -179,10 +179,12 @@ class Main extends React.Component {
           <h2 className="major">Contact</h2>
           <form
             name="bloock-contact"
-            method="post"
-            action="#"
-            data-netlify="true"
+            method="POST"
+            netlify
+            netlify-honeypot="bot-field"
           >
+            <input type="hidden" name="form-name" value="bloock-contact" />
+
             <div className="field half first">
               <label htmlFor="name">نام</label>
               <input type="text" name="name" id="name" />
