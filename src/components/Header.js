@@ -58,7 +58,7 @@ const Header = props => (
               props.onOpenArticle('contact')
             }}
           >
-            لیست انتظار
+            مشارکت
           </a>
         </li>
       </ul>

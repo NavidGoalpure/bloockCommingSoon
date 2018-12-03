@@ -184,13 +184,27 @@ class Main extends React.Component {
             data-netlify="true"
           >
             <div className="field half first">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">نام</label>
               <input type="text" name="name" id="name" />
             </div>
             <div className="field half">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="family">نام خانوادگی</label>
+              <input type="text" name="family" id="family" />
+            </div>
+            <div className="field half">
+              <label htmlFor="email">ایمیل</label>
               <input type="text" name="email" id="email" />
             </div>
+            <div id="testkoll" className="field half">
+              <label htmlFor="collab">همکاری به عنوان</label>
+              <select id="collab" className="field ">
+                <option value="CoFounder">هم‌بنیانگذار</option>
+                <option value="investor">سرمایه گذار</option>
+                <option value="mercedes">صاحب رسانه</option>
+                <option value="other">سایر</option>
+              </select>
+            </div>
+
             <div className="field">
               <label htmlFor="message">Message</label>
               <textarea name="message" id="message" rows="4" />
