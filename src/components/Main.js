@@ -6,7 +6,6 @@ import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
-
   render() {
     let close = (
       <div
@@ -180,7 +179,13 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">همکاری</h2>
+          <h2 className="major">تو رامن چشم در راهم</h2>
+          <p>
+            {' '}
+            اگه برنامه‌نویس،‌ سرمایه گذار،‌ تولید کننده محتوا هستین یا هر
+            امکانات و مهارت دیگه ای دارین که فکر میکنین می‌تونه به «بلووک» کمک
+            کنه، با یک پیام خوشحالمون کنین.
+          </p>
           <form
             name="bloock-contact"
             method="POST"
@@ -215,7 +220,7 @@ class Main extends React.Component {
                 <input type="submit" value="ارسال" className="special" />
               </li>
               <li>
-                <input type="reset" value="Reset" />
+                <input type="reset" value="پاک کن" />
               </li>
             </ul>
           </form>
