@@ -6,6 +6,25 @@ import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { value: 'CoFounder' }
+
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
+  handleChange(event) {
+    this.setState({ value: event.target.value })
+    console.log('test=', event.target.value)
+  }
+
+  handleSubmit(event) {
+    console.log('submit=', this.state.value)
+    alert('Your favorite flavor is: ' + this.state.value)
+    event.preventDefault()
+  }
+
   render() {
     let close = (
       <div
@@ -179,7 +198,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Contact</h2>
+          <h2 className="major">همکاری</h2>
           <form
             name="bloock-contact"
             method="POST"
@@ -202,8 +221,13 @@ class Main extends React.Component {
             </div>
             <div className="field half">
               <label htmlFor="collab">همکاری به عنوان</label>
-              <input type="text" name="name" id="name" />
-              <select name="collab" id="collab" className="field ">
+              <select
+                value={this.state.value}
+                onChange={this.handleChange}
+                name="collab"
+                id="collab"
+                className="field "
+              >
                 <option value="CoFounder">هم‌بنیانگذار</option>
                 <option value="investor">سرمایه گذار</option>
                 <option value="mercedes">صاحب رسانه</option>
