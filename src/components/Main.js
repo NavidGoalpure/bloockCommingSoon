@@ -200,9 +200,10 @@ class Main extends React.Component {
               <label htmlFor="email">ایمیل</label>
               <input type="text" name="email" id="email" />
             </div>
-            <div id="testkoll" className="field half">
+            <div className="field half">
               <label htmlFor="collab">همکاری به عنوان</label>
-              <select id="collab" className="field ">
+              <input type="text" name="name" id="name" />
+              <select name="collab" id="collab" className="field ">
                 <option value="CoFounder">هم‌بنیانگذار</option>
                 <option value="investor">سرمایه گذار</option>
                 <option value="mercedes">صاحب رسانه</option>
