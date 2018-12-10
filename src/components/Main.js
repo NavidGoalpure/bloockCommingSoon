@@ -1,11 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import pic01 from '../images/pic01.jpg'
+import plattformVideo from '../images/plattform.webm'
+import blockchainVideo from '../images/blockchain.webm'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
+  componentWillReceiveProps() {
+    this.refs.goalVid.pause()
+    this.refs.blockchainVid.pause()
+  }
+
   render() {
     let close = (
       <div
@@ -31,7 +36,15 @@ class Main extends React.Component {
         >
           <h2 className="major">هدف پروژه</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <video
+              ref="goalVid"
+              width="100%"
+              poster={pic03}
+              controls
+              src={plattformVideo}
+            >
+              متاسفانه مرورگر شما این کلیپ رو پشتیبانی نمی‌کنه!
+            </video>
           </span>
           <p>
             همه ما با پلتفرم ها آشنا هستیم. «دیوار» پلتفرمیه که فروشنده های
@@ -63,8 +76,16 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">چرا بلاکچین</h2>
-          <span className="image main">
-            <img src={pic02} alt="" />
+          <span>
+            <video
+              ref="blockchainVid"
+              width="100%"
+              poster={pic02}
+              controls
+              src={blockchainVideo}
+            >
+              متاسفانه مرورگر شما این کلیپ رو پشتیبانی نمی‌کنه!
+            </video>
           </span>
           <p>
             با فراگیر شدن اینترنت «پلتفرم‌های تجاری» تونستن که با متصل کردن
