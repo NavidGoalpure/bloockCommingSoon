@@ -23,17 +23,21 @@ const Header = props => (
           netlify
           netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="bloock-newsMail" value="bloock-newsMail" />
+          {/* <label htmlFor="email">ایمیل</label> */}
+          <input
+            style={{ borderRadius: '0px 4px 4px 0px' }}
+            type="text"
+            name="email"
+            id="email"
+            placeholder="مثلا navid.goalpure@gmail.com"
+          />
 
-          <div className="field half ">
-            {/* <label htmlFor="email">ایمیل</label> */}
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="مثلا navid.goalpure@gmail.com"
-            />
-          </div>
+          <input
+            type="submit"
+            value="ثبت"
+            className="special"
+            style={{ borderRadius: '4px 0px 0px 4px' }}
+          />
         </form>
       </div>
     </div>

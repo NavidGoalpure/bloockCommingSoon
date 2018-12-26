@@ -6,7 +6,7 @@ import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
-  componentWillReceiveProps() {
+  UNSAFE_componentWillReceiveProps() {
     this.refs.goalVid.pause()
     this.refs.blockchainVid.pause()
   }
@@ -213,8 +213,6 @@ class Main extends React.Component {
             netlify
             netlify-honeypot="bot-field"
           >
-            <input type="hidden" name="bloock-contact" value="bloock-contact" />
-
             <div className="field half first">
               <label htmlFor="name">نام</label>
               <input type="text" name="name" id="name" />
