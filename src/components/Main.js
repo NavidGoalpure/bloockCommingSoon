@@ -213,7 +213,7 @@ class Main extends React.Component {
             netlify
             netlify-honeypot="bot-field"
           >
-            <input type="hidden" name="form-name" value="bloock-contact" />
+            <input type="hidden" name="bloock-contact" value="bloock-contact" />
 
             <div className="field half first">
               <label htmlFor="name">نام</label>

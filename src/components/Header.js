@@ -15,7 +15,26 @@ const Header = props => (
           کنین. بلووک فعلا در حال ساخته و هنوز کامل نشده اما با توضیحات پایین
           می‌تونی بهتر بشناسیش و شاید هم دوس داشتی اخبارش رو دنبال کنی. راستی:
         </p>
-        <h2> تو دوس داری با «دوست من» دوست بشی؟</h2>
+        <h2> ایمیلت رو وارد کن تا از پیشرفت پروژه باخبر بشی</h2>
+        <form
+          style={{ display: 'flex', justifyContent: 'center', margin: '0' }}
+          name="bloock-newsMail"
+          method="POST"
+          netlify
+          netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="bloock-newsMail" value="bloock-newsMail" />
+
+          <div className="field half ">
+            {/* <label htmlFor="email">ایمیل</label> */}
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="مثلا navid.goalpure@gmail.com"
+            />
+          </div>
+        </form>
       </div>
     </div>
     <nav>
