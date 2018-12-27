@@ -211,6 +211,7 @@ class Main extends React.Component {
             name="bloock-contact"
             method="POST"
             netlify
+            // check
             data-netlify="true"
             netlify-honeypot="bot-field"
           >
