@@ -24,7 +24,9 @@ const Header = props => (
           data-netlify="true"
           netlify-honeypot="bot-field"
         >
-          {/* <label htmlFor="email">ایمیل</label> */}
+          {/* برای درست کار کردن فرم در نتلیفای وجود این فیلد هیدن ضروریست */}
+          <input type="hidden" name="bloock-newsMail" value="bloock-newsMail" />
+
           <input
             style={{ borderRadius: '0px 4px 4px 0px' }}
             type="text"

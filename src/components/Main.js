@@ -211,11 +211,11 @@ class Main extends React.Component {
             name="bloock-contact"
             method="POST"
             netlify
-            // check
             data-netlify="true"
             netlify-honeypot="bot-field"
           >
-            {/* <input type="hidden" name="form-name" value="bloock-contact" /> */}
+            {/* برای درست کار کردن فرم در نتلیفای وجود این فیلد هیدن ضروریست */}
+            <input type="hidden" name="bloock-contact" value="bloock-contact" />
             <div className="field half first">
               <label htmlFor="name">نام</label>
               <input type="text" name="name" id="name" />
