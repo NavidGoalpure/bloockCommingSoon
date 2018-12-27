@@ -21,6 +21,7 @@ const Header = props => (
           name="bloock-newsMail"
           method="POST"
           netlify
+          data-netlify="true"
           netlify-honeypot="bot-field"
         >
           {/* <label htmlFor="email">ایمیل</label> */}
@@ -34,6 +35,7 @@ const Header = props => (
 
           <input
             type="submit"
+            name="send"
             value="ثبت"
             className="special"
             style={{ borderRadius: '4px 0px 0px 4px' }}

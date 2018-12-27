@@ -211,8 +211,10 @@ class Main extends React.Component {
             name="bloock-contact"
             method="POST"
             netlify
+            data-netlify="true"
             netlify-honeypot="bot-field"
           >
+            <input type="hidden" name="form-name" value="bloock-contact" />
             <div className="field half first">
               <label htmlFor="name">نام</label>
               <input type="text" name="name" id="name" />
@@ -236,10 +238,15 @@ class Main extends React.Component {
             </div>
             <ul className="actions">
               <li>
-                <input type="submit" value="ارسال" className="special" />
+                <input
+                  type="submit"
+                  name="send"
+                  value="ارسال"
+                  className="special"
+                />
               </li>
               <li>
-                <input type="reset" value="پاک کن" />
+                <input type="reset" name="removeAll" value="پاک کن" />
               </li>
             </ul>
           </form>
