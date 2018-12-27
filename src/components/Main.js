@@ -238,15 +238,10 @@ class Main extends React.Component {
             </div>
             <ul className="actions">
               <li>
-                <input
-                  type="submit"
-                  name="send"
-                  value="ارسال"
-                  className="special"
-                />
+                <input type="submit" value="ارسال" className="special" />
               </li>
               <li>
-                <input type="reset" name="removeAll" value="پاک کن" />
+                <input type="reset" value="پاک کن" />
               </li>
             </ul>
           </form>

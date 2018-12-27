@@ -35,7 +35,6 @@ const Header = props => (
 
           <input
             type="submit"
-            name="send"
             value="ثبت"
             className="special"
             style={{ borderRadius: '4px 0px 0px 4px' }}
