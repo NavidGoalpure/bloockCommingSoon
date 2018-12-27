@@ -25,7 +25,7 @@ const Header = props => (
           netlify-honeypot="bot-field"
         >
           {/* برای درست کار کردن فرم در نتلیفای وجود این فیلد هیدن ضروریست */}
-          <input type="hidden" name="bloock-newsMail" value="bloock-newsMail" />
+          <input type="hidden" name="form-name" value="bloock-newsMail" />
 
           <input
             style={{ borderRadius: '0px 4px 4px 0px' }}
