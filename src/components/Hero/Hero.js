@@ -15,7 +15,7 @@ const Hero = props => {
         <div className="spaceBlank" />
         <div className="lasvegas">
           <h1 className="languageEn ">
-            bloock <br />
+            بلووک <br />
           </h1>
           <h1 className="languageFa">
             تو را من
