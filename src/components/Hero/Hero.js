@@ -14,7 +14,7 @@ const Hero = props => {
       <section className="hero">
         <div className="spaceBlank" />
         <div className="lasvegas">
-          <h1 className="languageEn ">
+          <h1 className="languageFa ">
             بلووک <br />
           </h1>
           <h1 className="languageFa">
