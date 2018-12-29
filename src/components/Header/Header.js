@@ -36,7 +36,7 @@ class Header extends React.Component {
     return (
       <React.Fragment>
         <header className={`header ${this.getHeaderSize()}`}>
-          <Link to="/" className="logoType">
+          <a href="https://www.bloock.ir/" className="logoType">
             <div className="logo">
               <img
                 src={config.gravatarImgMd5 == "" ? avatar : config.gravatarImgMd5}
@@ -47,7 +47,7 @@ class Header extends React.Component {
               <h1>{config.headerTitle}</h1>
               <h2>{config.headerSubTitle}</h2>
             </div>
-          </Link>
+          </a>
           <FontLoadedContext.Consumer>
             {loaded => (
               <ScreenWidthContext.Consumer>

@@ -1,23 +1,23 @@
 module.exports = {
-  siteTitle: "MrNewID", // <title>
-  shortSiteTitle: "Blockchain is coming-خوش به حال روزگار", // <title> ending for posts and pages
-  siteDescription: "مقالاتی درباره تاثیرات بلاکچین",
-  siteUrl: "https://MrNewId.ir",
+  siteTitle: "بلووک", // <title>
+  shortSiteTitle: "بلووک- بلاگ", // <title> ending for posts and pages
+  siteDescription: "بلاگ استارتاپ بلووک",
+  siteUrl: "https://blog.bloock.ir",
   // pathPrefix: "",
   siteImage: "preview.jpg",
   siteLanguage: "fa",
 
   /* author */
-  authorName: "نوید گل پور",
+  authorName: "بلووک",
   authorTwitterAccount: "NavidGoalpure",
 
   /* info */
-  headerTitle: "نوید گل‌ پور",
-  headerSubTitle: "محقق بلاکچین و اینترنت غیرمتمرکز",
+  headerTitle: "بلووک",
+  headerSubTitle: "پلتفرم اجاره کتاب بر بستر بلاکچین",
 
   /* manifest.json */
-  manifestName: "MrNewID",
-  manifestShortName: "MrNewID", // max 12 characters
+  manifestName: "‌‌Bloock",
+  manifestShortName: "‌‌Bloock", // max 12 characters
   manifestStartUrl: "/index.html",
   manifestBackgroundColor: "white",
   manifestThemeColor: "#666",
