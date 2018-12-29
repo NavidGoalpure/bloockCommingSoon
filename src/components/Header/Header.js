@@ -72,6 +72,7 @@ class Header extends React.Component {
         {/* --- STYLES --- */}
         <style jsx>{`
           .header {
+            direction: ltr;
             align-items: center;
             justify-content: center;
             background-color: ${theme.color.neutral.white};
@@ -133,6 +134,8 @@ class Header extends React.Component {
           }
 
           .type {
+            direction: rtl;
+
             margin-right: 0.5em;
           }
 

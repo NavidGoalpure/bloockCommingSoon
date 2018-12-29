@@ -26,8 +26,8 @@ class Menu extends React.Component {
       { to: "/", label: "خانه", icon: FaHome },
       { to: "/category/", label: "دسته بندی", icon: FaTag },
       { to: "/search/", label: "جستجو", icon: FaSearch },
-      ...pages,
-      { to: "/contact/", label: "تماس با من", icon: FaEnvelope }
+      // ...pages
+      // { to: "/contact/", label: "تماس با من", icon: FaEnvelope }
     ];
 
     this.renderedItems = []; // will contain references to rendered DOM elements of menu
@@ -164,6 +164,7 @@ class Menu extends React.Component {
         {/* --- STYLES --- */}
         <style jsx>{`
           .menu {
+            direction: ltr;
             align-items: center;
             background: ${theme.color.neutral.white};
             bottom: 0;
@@ -222,8 +223,9 @@ class Menu extends React.Component {
             }
 
             .itemList {
-              justify-content: flex-end;
+              justify-content: flex-start;
               padding: 0;
+              flex-direction: row-reverse;
             }
 
             .hiddenItemList {

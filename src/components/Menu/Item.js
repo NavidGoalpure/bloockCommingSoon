@@ -22,6 +22,8 @@ const Item = props => {
       <style jsx>{`
         .item,
         .showItem {
+          direction: rtl;
+
           transition: all ${theme.time.duration.default};
           display: flex;
           align-items: center;
