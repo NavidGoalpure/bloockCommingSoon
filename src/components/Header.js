@@ -88,6 +88,16 @@ const Header = props => (
             مشارکت
           </a>
         </li>
+        <li>
+          <a
+            href="https://blog.bloock.ir/"
+            onClick={() => {
+              props.onOpenArticle('socialBusines')
+            }}
+          >
+            وبلاگ
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
