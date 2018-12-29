@@ -1,118 +1,130 @@
-import React from 'react'
-import Layout from '../components/layout'
-
-import Header from '../components/Header'
-import Main from '../components/Main'
-import Footer from '../components/Footer'
+import PropTypes from "prop-types";
+import React from "react";
+import { graphql } from "gatsby";
+import { ThemeContext } from "../layouts";
+import Blog from "../components/Blog";
+import Hero from "../components/Hero";
+import Seo from "../components/Seo";
 
 class IndexPage extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isArticleVisible: false,
-      timeout: false,
-      articleTimeout: false,
-      article: '',
-      loading: 'is-loading',
-    }
-    this.handleOpenArticle = this.handleOpenArticle.bind(this)
-    this.handleCloseArticle = this.handleCloseArticle.bind(this)
-    this.setWrapperRef = this.setWrapperRef.bind(this)
-    this.handleClickOutside = this.handleClickOutside.bind(this)
-  }
+  separator = React.createRef();
 
-  componentDidMount() {
-    this.timeoutId = setTimeout(() => {
-      this.setState({ loading: '' })
-    }, 100)
-    document.addEventListener('mousedown', this.handleClickOutside)
-  }
-
-  componentWillUnmount() {
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId)
-    }
-    document.removeEventListener('mousedown', this.handleClickOutside)
-  }
-
-  setWrapperRef(node) {
-    this.wrapperRef = node
-  }
-
-  handleOpenArticle(article) {
-    this.setState({
-      isArticleVisible: !this.state.isArticleVisible,
-      article,
-    })
-
-    setTimeout(() => {
-      this.setState({
-        timeout: !this.state.timeout,
-      })
-    }, 325)
-
-    setTimeout(() => {
-      this.setState({
-        articleTimeout: !this.state.articleTimeout,
-      })
-    }, 350)
-  }
-
-  handleCloseArticle() {
-    this.setState({
-      articleTimeout: !this.state.articleTimeout,
-    })
-
-    setTimeout(() => {
-      this.setState({
-        timeout: !this.state.timeout,
-      })
-    }, 325)
-
-    setTimeout(() => {
-      this.setState({
-        isArticleVisible: !this.state.isArticleVisible,
-        article: '',
-      })
-    }, 350)
-  }
-
-  handleClickOutside(event) {
-    if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
-      if (this.state.isArticleVisible) {
-        this.handleCloseArticle()
-      }
-    }
-  }
+  scrollToContent = e => {
+    this.separator.current.scrollIntoView({ block: "start", behavior: "smooth" });
+  };
 
   render() {
+    const {
+      data: {
+        posts: { edges: posts = [] },
+        bgDesktop: {
+          resize: { src: desktop }
+        },
+        bgTablet: {
+          resize: { src: tablet }
+        },
+        bgMobile: {
+          resize: { src: mobile }
+        },
+        site: {
+          siteMetadata: { facebook }
+        }
+      }
+    } = this.props;
+
+    const backgrounds = {
+      desktop,
+      tablet,
+      mobile
+    };
+
     return (
-      <Layout location={this.props.location}>
-        <div
-          className={`body ${this.state.loading} ${
-            this.state.isArticleVisible ? 'is-article-visible' : ''
-          }`}
-        >
-          <div id="wrapper">
-            <Header
-              onOpenArticle={this.handleOpenArticle}
-              timeout={this.state.timeout}
-            />
-            <Main
-              isArticleVisible={this.state.isArticleVisible}
-              timeout={this.state.timeout}
-              articleTimeout={this.state.articleTimeout}
-              article={this.state.article}
-              onCloseArticle={this.handleCloseArticle}
-              setWrapperRef={this.setWrapperRef}
-            />
-            <Footer timeout={this.state.timeout} />
-          </div>
-          <div id="bg" />
-        </div>
-      </Layout>
-    )
+      <React.Fragment>
+        <ThemeContext.Consumer>
+          {theme => (
+            <Hero scrollToContent={this.scrollToContent} backgrounds={backgrounds} theme={theme} />
+          )}
+        </ThemeContext.Consumer>
+
+        <hr ref={this.separator} />
+
+        <ThemeContext.Consumer>
+          {theme => <Blog posts={posts} theme={theme} />}
+        </ThemeContext.Consumer>
+
+        <Seo facebook={facebook} />
+
+        <style jsx>{`
+          hr {
+            margin: 0;
+            border: 0;
+          }
+        `}</style>
+      </React.Fragment>
+    );
   }
 }
 
-export default IndexPage
+IndexPage.propTypes = {
+  data: PropTypes.object.isRequired
+};
+
+export default IndexPage;
+
+//eslint-disable-next-line no-undef
+export const query = graphql`
+  query IndexQuery {
+    posts: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "//posts/[0-9]+.*--/" } }
+      sort: { fields: [fields___prefix], order: DESC }
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+            prefix
+          }
+          frontmatter {
+            title
+            category
+            author
+            cover {
+              children {
+                ... on ImageSharp {
+                  fluid(maxWidth: 800, maxHeight: 360) {
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    site {
+      siteMetadata {
+        facebook {
+          appId
+        }
+      }
+    }
+    bgDesktop: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
+      resize(width: 1200, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+    bgTablet: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
+      resize(width: 800, height: 1100, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+    bgMobile: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
+      resize(width: 450, height: 850, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+  }
+`;
+
+//hero-background
