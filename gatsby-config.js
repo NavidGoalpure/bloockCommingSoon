@@ -1,8 +1,9 @@
 module.exports = {
+  pathPrefix: '/bloockCommingSoon',
   siteMetadata: {
-    title: "Bloock",
-    author: "نوید گل پور",
-    description: "اجاره کتاب بر بستر بلاکچین"
+    title: 'Bloock',
+    author: 'نوید گل پور',
+    description: 'اجاره کتاب بر بستر بلاکچین',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -19,6 +20,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
   ],
 }
