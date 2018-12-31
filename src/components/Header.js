@@ -25,14 +25,11 @@ const Header = props => (
         <h2> ایمیلت رو وارد کن تا از پیشرفت پروژه باخبر بشی</h2>
         <form
           style={{ display: 'flex', justifyContent: 'center', margin: '0' }}
-          name="bloock-newsMail"
+          action="https://getsimpleform.com/messages?form_api_token=9903a95d5d41daf0a8360bf82b852420"
           method="POST"
-          netlify
-          data-netlify="true"
-          netlify-honeypot="bot-field"
         >
           {/* برای درست کار کردن فرم در نتلیفای وجود این فیلد هیدن ضروریست */}
-          <input type="hidden" name="form-name" value="bloock-newsMail" />
+          <input type="hidden" name="redirect_to" value="/" />
 
           <input
             style={{ borderRadius: '0px 4px 4px 0px' }}

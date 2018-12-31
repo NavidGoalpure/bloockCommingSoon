@@ -210,13 +210,10 @@ class Main extends React.Component {
           <form
             name="bloock-contact"
             method="POST"
-            netlify
-            // check
-            data-netlify="true"
-            netlify-honeypot="bot-field"
+            action="https://getsimpleform.com/messages?form_api_token=9903a95d5d41daf0a8360bf82b852420"
           >
             {/* برای درست کار کردن فرم در نتلیفای وجود این فیلد هیدن ضروریست */}
-            <input type="hidden" name="form-name" value="bloock-contact" />
+            <input type="hidden" name="redirect_to" value="/" />
             <div className="field half first">
               <label htmlFor="name">نام</label>
               <input type="text" name="name" id="name" />
