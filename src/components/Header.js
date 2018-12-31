@@ -29,7 +29,7 @@ const Header = props => (
           method="POST"
         >
           {/* برای درست کار کردن فرم در نتلیفای وجود این فیلد هیدن ضروریست */}
-          <input type="hidden" name="redirect_to" value="/" />
+          <input type="hidden" name="redirect_to" value="https://bloock.ir" />
 
           <input
             style={{ borderRadius: '0px 4px 4px 0px' }}
