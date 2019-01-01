@@ -29,7 +29,7 @@ const Header = props => (
           method="POST"
         >
           {/* برای درست کار کردن فرم در نتلیفای وجود این فیلد هیدن ضروریست */}
-          <input type="hidden" name="redirect_to" value="https://bloock.ir" />
+          <input type="hidden" name="redirect_to" value="http://bloock.ir" />
 
           <input
             style={{ borderRadius: '0px 4px 4px 0px' }}
@@ -93,7 +93,7 @@ const Header = props => (
         </li>
         <li>
           <a
-            href="https://blog.bloock.ir/"
+            href="http://blog.bloock.ir/"
             onClick={() => {
               props.onOpenArticle('socialBusines')
             }}
