@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/bloockCommingSoon',
+  // pathPrefix: '/bloockCommingSoon',
   siteMetadata: {
     title: 'Bloock',
     author: 'نوید گل پور',
