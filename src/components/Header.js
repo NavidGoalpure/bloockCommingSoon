@@ -9,7 +9,7 @@ const Header = props => (
       <img
         src={logoPic}
         alt="bloock logo"
-        style={{ width: '5rem', height: '5rem' }}
+        style={{ width: '5rem', height: '5rem', marginTop: '0.5rem' }}
       />
     </div>
     <div className="content">
