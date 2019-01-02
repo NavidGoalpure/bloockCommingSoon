@@ -93,7 +93,7 @@ const Header = props => (
         </li>
         <li>
           <a
-            href="http://blog.bloock.ir/"
+            href="https://virgool.io/bloock"
             onClick={() => {
               props.onOpenArticle('socialBusines')
             }}
