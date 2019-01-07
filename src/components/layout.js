@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import blueLogoPic from '../images/blueLogo.png'
 
 import '../assets/scss/main.scss'
 
@@ -34,8 +36,14 @@ const Layout = ({ children, location }) => {
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
-              // { name: 'description', content: 'Sample' },
-              // { name: 'keywords', content: 'sample, something' },
+              { name: 'og:image', content: blueLogoPic.toString() },
+              { name: 'title', content: 'بلووک' },
+              { name: 'title', content: 'بلووک' },
+              {
+                name: 'description',
+                content: 'پلتفرم اجاره کتاب بر بستر بلاکچین',
+              },
+              { name: 'keywords', content: 'اجاره کتاب, بلاکچین' },
             ]}
           >
             <html lang="en" />
