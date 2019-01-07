@@ -3,7 +3,7 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import blueLogoPic from '../images/blueLogo.png'
+import blueLogoPic from '../images/blueLogo.jpg'
 
 import '../assets/scss/main.scss'
 
