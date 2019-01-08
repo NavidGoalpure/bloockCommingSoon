@@ -240,7 +240,7 @@ class Main extends React.Component {
                 <input
                   type="submit"
                   name="send"
-                  value="ارسال"
+                  value="ثبت همکاری"
                   className="special"
                 />
               </li>
