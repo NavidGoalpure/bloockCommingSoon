@@ -30,6 +30,7 @@ const Header = props => (
         >
           {/* برای درست کار کردن فرم وجود این فیلد هیدن ضروریست */}
           <input type="hidden" name="redirect_to" value="http://bloock.ir" />
+          <input name="message" type="text" />
 
           <input
             style={{ borderRadius: '0px 4px 4px 0px' }}
