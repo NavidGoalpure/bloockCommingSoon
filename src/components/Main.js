@@ -214,8 +214,6 @@ class Main extends React.Component {
           >
             {/* برای درست کار کردن فرم در نتلیفای وجود این فیلد هیدن ضروریست */}
             <input type="hidden" name="redirect_to" value="http://bloock.ir" />
-            <input name="message" type="text" />
-
             <div className="field half first">
               <label htmlFor="name">نام</label>
               <input type="text" name="name" id="name" />
