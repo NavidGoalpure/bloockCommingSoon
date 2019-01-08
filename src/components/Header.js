@@ -25,10 +25,10 @@ const Header = props => (
         <h2> ایمیلت رو وارد کن تا از پیشرفت پروژه باخبر بشی</h2>
         <form
           style={{ display: 'flex', justifyContent: 'center', margin: '0' }}
-          action="https://getsimpleform.com/messages?form_api_token=9903a95d5d41daf0a8360bf82b852420"
+          action="https://getsimpleform.com/messages?form_api_token=3a2b2dfbb84eeaa8d36aff499a0f6358"
           method="POST"
         >
-          {/* برای درست کار کردن فرم در نتلیفای وجود این فیلد هیدن ضروریست */}
+          {/* برای درست کار کردن فرم وجود این فیلد هیدن ضروریست */}
           <input type="hidden" name="redirect_to" value="http://bloock.ir" />
 
           <input

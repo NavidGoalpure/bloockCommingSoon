@@ -210,7 +210,7 @@ class Main extends React.Component {
           <form
             name="bloock-contact"
             method="POST"
-            action="https://getsimpleform.com/messages?form_api_token=9903a95d5d41daf0a8360bf82b852420"
+            action="https://getsimpleform.com/messages?form_api_token=3a2b2dfbb84eeaa8d36aff499a0f6358"
           >
             {/* برای درست کار کردن فرم در نتلیفای وجود این فیلد هیدن ضروریست */}
             <input type="hidden" name="redirect_to" value="http://bloock.ir" />
