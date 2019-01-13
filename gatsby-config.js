@@ -1,8 +1,7 @@
 module.exports = {
   // pathPrefix: '/bloockCommingSoon',
   siteMetadata: {
-    title: 'Bloock',
-    author: 'نوید گل پور',
+    title: 'بلووک',
     description: 'اجاره کتاب بر بستر بلاکچین',
   },
   plugins: [
