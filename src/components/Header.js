@@ -72,14 +72,7 @@ const Header = props => (
           </a>
         </li>
         <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('socialBusines')
-            }}
-          >
-            کسب و کار اجتماعی
-          </a>
+          <a href="http://rent.bloock.ir/">اجاره کتاب</a>
         </li>
         <li>
           <a
@@ -92,14 +85,7 @@ const Header = props => (
           </a>
         </li>
         <li>
-          <a
-            href="https://virgool.io/bloock"
-            onClick={() => {
-              props.onOpenArticle('socialBusines')
-            }}
-          >
-            وبلاگ
-          </a>
+          <a href="https://virgool.io/bloock">وبلاگ</a>
         </li>
       </ul>
     </nav>

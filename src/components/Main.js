@@ -124,7 +124,7 @@ class Main extends React.Component {
           {close}
         </article>
 
-        <article
+        {/* <article
           id="socialBusines"
           className={`${
             this.props.article === 'socialBusines' ? 'active' : ''
@@ -192,7 +192,7 @@ class Main extends React.Component {
           </p>
 
           {close}
-        </article>
+        </article> */}
 
         <article
           id="contact"
