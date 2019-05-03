@@ -93,7 +93,7 @@ const Header = props => (
           </a>
         </li> */}
         <li>
-          <a href="https://virgool.io/bloock">تالار خاطرات</a>
+          <a href="https://memory.bloock.ir">تالار خاطرات</a>
         </li>
         <li>
           <a href="https://virgool.io/bloock">وبلاگ</a>
