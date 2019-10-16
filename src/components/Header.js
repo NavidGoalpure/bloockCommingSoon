@@ -79,9 +79,7 @@ const Header = props => (
             چرا بلاکچین
           </a>
         </li>
-        <li>
-          <a href="http://rent.bloock.ir/">اجاره کتاب در گرگان (آزمایشی)</a>
-        </li>
+
         {/* <li>
           <a
             href="javascript:;"
