@@ -91,7 +91,7 @@ const Header = props => (
           </a>
         </li> */}
         <li>
-          <a href="https://memory.bloock.ir">تالار خاطرات</a>
+          <a href="https://bloock-memory.netlify.com/">تالار خاطرات</a>
         </li>
         <li>
           <a href="https://virgool.io/bloock">وبلاگ</a>
